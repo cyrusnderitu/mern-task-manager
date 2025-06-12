@@ -6,7 +6,7 @@ A fullstack Task Manager application built with the **MERN stack** (MongoDB, Exp
 
 ## 📁 Project Structure
 
-/mern-task-manager
+'''/mern-task-manager
 ├── backend
 │   ├── controllers
 │   ├── middleware
@@ -19,7 +19,7 @@ A fullstack Task Manager application built with the **MERN stack** (MongoDB, Exp
 │   ├── components
 │   ├── styles
 │   └── ...
-├── package.json (optional root)
+├── package.json (optional root)'''
 ---
 ## 🚀 Features
 
