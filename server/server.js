@@ -4,6 +4,8 @@ const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const authR = require('./routes/authRoutes');
+const userRoutes = require('./routes/userRoutes');
+
 
 dotenv.config();
 
@@ -16,7 +18,15 @@ app.use(cors({
   origin: 'http://localhost:3000',
   credentials: true
 }));
+// Routes
 app.use('/api/auth/', authR)
+app.use('/api/user/', userRoutes);
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: 'Internal Server Error' });
+});
 
 // Test route
 app.get('/', (req, res) => {
