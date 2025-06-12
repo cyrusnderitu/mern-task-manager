@@ -6,20 +6,22 @@ A fullstack Task Manager application built with the **MERN stack** (MongoDB, Exp
 
 ## 📁 Project Structure
 
-/mern-task-manager 
- ├── backend │ 
-        ├── controllers │ 
-        ├── middleware │ 
-        ├── models │ 
-        ├── routes │ 
-        ├── .env │ 
-   └── server.js 
- ├── frontend (Next.js app) │ 
-     ├── pages │ 
-     ├── components │ 
-     ├── styles │ 
-     └── ... 
-   ├── package.json (optional root)
+```
+/mern-task-manager
+├── backend
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   ├── .env
+│   └── server.js
+├── frontend (Next.js app)
+│   ├── pages
+│   ├── components
+│   ├── styles
+│   └── ...
+├── package.json (optional root)
+```
 ---
 ## 🚀 Features
 
