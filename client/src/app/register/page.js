@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import axios from '@/lib/axios';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function RegisterPage() {
   const [name, setName] = useState('');
@@ -63,6 +64,11 @@ export default function RegisterPage() {
             Register
           </button>
         </form>
+          <div className="mt-4 text-center">
+            <Link href="/login" className="text-blue-600 hover:underline">
+              Already have an account? Login here
+            </Link>
+          </div>
       </div>
     </div>
   );

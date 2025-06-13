@@ -40,7 +40,6 @@ const loginUser = async (req, res) => {
 };
 
 // get users
-
 const getUsers = async (req, res) => {
   const users = await User.find().select('-password').sort({ createdAt: -1 }) // Exclude password field
   res.status(200).json(users);

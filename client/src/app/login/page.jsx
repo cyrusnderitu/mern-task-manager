@@ -3,6 +3,7 @@
 import React, {useState} from 'react'
 import axios from '@/lib/axios';
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 const LoginPage = () => {
     const [email, setEmail] = useState('')
@@ -25,9 +26,6 @@ const LoginPage = () => {
             return
             
         }
-        console.log('Logging in with:', { email, password })
-        // After successful login, you can redirect or update state
-        // router.push('/dashboard') // Example redirect
     }
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-100">
@@ -60,6 +58,16 @@ const LoginPage = () => {
           >
             Login
           </button>
+          <div className="mt-2 text-center text-sm text-gray-600">
+            <Link href="/forgot-password" className="text-blue-600 hover:underline">
+              Forgot Password?
+            </Link>
+          </div>
+          <div className="mt-4 text-center">
+            <Link href="/register" className="text-blue-600 hover:underline">
+              Don't have an account? Register here
+            </Link>
+          </div>
         </form>
       </div>
     </div>
